@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=magicCAD
+Comment=Woodworking extension for FreeCAD
+Comment[de]=Holzbearbeitungs Erweiterung für FreeCAD
+Comment[es]=Extensión de carpintería para FreeCAD
+Comment[ko]=FreeCAD용 목공 확장 프로그램
+Comment[pl]=Warsztat stolarski dla FreeCAD
+Comment[ru]=Расширение для деревообработки для FreeCAD
+GenericName=CAD Application
+GenericName[de]=CAD-Anwendung
+GenericName[es]=Aplicación CAD
+GenericName[ko]=CAD 응용프로그램
+GenericName[pl]=Aplikacja CAD
+GenericName[ru]=Система автоматизированного проектирования
+Exec=AppRun - --single-instance %F
+Terminal=false
+Type=Application
+Icon=magicCAD
+Categories=Engineering;Science;
+StartupNotify=true
+StartupWMClass=FreeCAD
+MimeType=application/x-extension-fcstd;model/obj;image/vnd.dwg;image/vnd.dxf;model/vnd.collada+xml;application/iges;model/iges;model/step;model/step+zip;model/stl;application/vnd.shp;model/vrml;

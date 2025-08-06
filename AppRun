@@ -1,0 +1,15 @@
+#!/bin/bash
+
+ROOT="$(dirname "$(readlink -f "${0}")")"
+MOD="${HOME}/.local/share/FreeCAD/Mod"
+
+if [ ! -d "${MOD}" ]; then
+	mkdir -p "${MOD}"
+	
+	if [ ! -d "${MOD}/Woodworking" ]; then
+		cp -r "${ROOT}/Woodworking" "${MOD}/"
+	fi
+fi
+
+KERNEL="${ROOT}/kernel.AppImage"
+"${KERNEL}" "$@"
