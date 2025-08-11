@@ -4,11 +4,24 @@ ROOT="$(dirname "$(readlink -f "${0}")")"
 MOD="${HOME}/.local/share/FreeCAD/Mod"
 
 if [ ! -d "${MOD}" ]; then
+	
+	echo -ne "\n\n"
+	echo "Installing workbenches to \"${MOD}/\" folder:"
+
 	mkdir -p "${MOD}"
 	
 	if [ ! -d "${MOD}/Woodworking" ]; then
+		
+		echo -ne "+ Woodworking ..."
 		cp -r "${ROOT}/Woodworking" "${MOD}/"
+		if [ $? -eq 0 ]; then
+			echo -ne "done.\n" 
+		else
+			echo -ne "fail.\n"
+		fi
 	fi
+
+	echo -ne "\n"
 fi
 
 KERNEL="${ROOT}/kernel.AppImage"
