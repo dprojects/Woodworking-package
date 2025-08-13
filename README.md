@@ -1,1 +1,3 @@
-Installation package with FreeCAD kernel and [Woodworking workbench](https://github.com/dprojects/Woodworking). This AppImage will copy the Woodworking workbench into `~/.local/share/FreeCAD/Mod` folder, will run the FreeCAD, and set the Woodworking workbench as default. So you will be able to update later the Woodworking workbench via [debugInfo](https://github.com/dprojects/Woodworking/tree/master/Docs#debuginfo) tool.
+### Installation package with FreeCAD 1.0.2 kernel and [Woodworking workbench](https://github.com/dprojects/Woodworking).
+
+This AppImage will copy the Woodworking workbench into `~/.local/share/FreeCAD/Mod` folder, will run the FreeCAD, and set the Woodworking workbench environment. So you will be able to update later the Woodworking workbench via [debugInfo](https://github.com/dprojects/Woodworking/tree/master/Docs#debuginfo) tool.
