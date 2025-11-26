@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# REBUILD AppImage
+chmod +x ./$1
+./$1 --appimage-extract
+appimagetool-x86_64.AppImage ./squashfs-root
+
+# BUILD with options
+./appimagetool-x86_64.AppImage -v --comp zstd --mksquashfs-opt -Xcompression-level --mksquashfs-opt 1 ./magicCAD_1.0 ./magicCAD_1.0.AppImage
+
+# BUILD official
+./appimagetool-x86_64.AppImage ./magicCAD_2.0 ./magicCAD_2.0.AppImage
+
